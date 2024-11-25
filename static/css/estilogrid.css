@@ -1,0 +1,117 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 10vh calc(100vh - 20vh) 10vh;
+    grid-template-areas: "h"
+                         "c"
+                         "f"
+
+}
+
+header {
+    grid-area: h;
+    background-color:rgb(138, 199, 252);
+    display: flex;
+    gap: 10vw;
+}
+
+.container {
+    grid-area: c;
+    background-color:rgb(234, 255, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+footer {
+    grid-area: f;
+    background-color:rgb(138, 199, 252);
+}
+
+table, thead, tbody{
+    width: 80%;
+}
+
+tr, li{
+    width:100%;
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(99, 98, 98);
+}
+
+th, td{
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn{
+    text-decoration:none;
+    background-color: rgb(96, 168, 231);
+    color: rgb(52, 61, 70);
+    padding: 2px;
+    margin: 2px;
+}
+
+.btn:hover{
+    text-decoration:none;
+    background-color: rgba(96, 168, 231, 0.5);
+    color: rgb(52, 61, 70);
+    padding: 2px;
+    margin: 2px;
+}
+
+.btnv{
+    text-decoration:none;
+    background-color: rgba(224, 79, 79, 0.5);
+    color: rgb(52, 61, 70);
+    padding: 2px;
+    margin: 2px;
+}
+
+.btnv:hover{
+    text-decoration:none;
+    background-color: rgb(243, 157, 157);
+    color: rgb(52, 61, 70);
+    padding: 2px;
+    margin: 2px;
+}
+
+ul{
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+
+form>p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 20vw;
+    height: 10vh;
+}
+
+.btnacesso{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
