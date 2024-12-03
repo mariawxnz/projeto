@@ -9,14 +9,15 @@
 </head>
 <body>
     <div class="container">
+
+        <div class="login">
     <h2>Login</h2>
     <form method="post" action="{% url 'login'  %}">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Entrar</button>
-    
     </form>
-
+</div>
     {% if form.erros %}
         <p>Usuário e senha inválidos!</p>
     {% endif %}
